@@ -1,0 +1,8 @@
+{
+  "name": "moment-locale-nl",
+  "license": "MIT",
+  "main": "nl.js",
+  "ignore": [
+    "**/.*"
+  ]
+}
