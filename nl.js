@@ -19,13 +19,7 @@
 
     var nl = moment.defineLocale('nl', {
         months : 'januari_februari_maart_april_mei_juni_juli_augustus_september_oktober_november_december'.split('_'),
-        monthsShort : function (m, format) {
-            if (/-MMM-/.test(format)) {
-                return monthsShortWithoutDots[m.month()];
-            } else {
-                return monthsShortWithDots[m.month()];
-            }
-        },
+        monthsShort : monthsShortWithDots.split('_'),
 
         monthsRegex: monthsRegex,
         monthsShortRegex: monthsRegex,
